@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>TikTok Panelim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login">
+    <h2>Giriş Yap</h2>
+    <input type="password" id="password" placeholder="Şifre">
+    <button onclick="checkPassword()">Giriş</button>
+  </div>
+
+  <div id="panel" style="display:none;">
+    <h1>👑 TikTok İçerik Paneli</h1>
+
+    <section>
+      <h2>🎥 Yeni Fikir Ekle</h2>
+      <input type="text" id="ideaInput" placeholder="Video fikri...">
+      <button onclick="addIdea()">Ekle</button>
+      <ul id="ideaList"></ul>
+    </section>
+
+    <section>
+      <h2>📅 İçerik Takvimi</h2>
+      <input type="text" id="scheduleInput" placeholder="Ne zaman, ne paylaşacaksın?">
+      <button onclick="addSchedule()">Ekle</button>
+      <ul id="scheduleList"></ul>
+    </section>
+
+    <section>
+      <h2>📈 Video Performansı</h2>
+      <input type="text" id="statsInput" placeholder="Video adı - izlenme - beğeni">
+      <button onclick="addStat()">Ekle</button>
+      <ul id="statList"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
